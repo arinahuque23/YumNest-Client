@@ -30,5 +30,6 @@ Follow these steps to get the YumNest client application running on your local m
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/arinahuque23/yumnest-client.git
-cd yumnest-client
+git clone https://github.com/arinahuque23/YumNest-Client.git
+
+cd YumNest-Client
