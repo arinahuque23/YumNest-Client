@@ -1,5 +1,5 @@
 import  { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import {  Link  } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,45 +13,45 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center py-3">
           <div className="flex items-center">
-            <NavLink to="/" className="text-2xl font-bold text-gray-800">YumNest</NavLink>
+            <Link to="/" className="text-2xl font-bold text-gray-800">YumNest</Link>
           </div>
           <div className="hidden md:flex space-x-6">
-            <NavLink 
+            <Link 
               to="/" 
               exact
               className="text-gray-600 hover:text-gray-800 py-2 px-3 rounded"
               activeClassName="bg-orange-500 text-white"
             >
               Home
-            </NavLink>
-            <NavLink 
+            </Link>
+            <Link 
               to="/order" 
               className="text-gray-600 hover:text-gray-800 py-2 px-3 rounded"
               activeClassName="bg-orange-500 text-white"
             >
               Order
-            </NavLink>
-            <NavLink 
+            </Link>
+            <Link 
               to="/login" 
               className="text-gray-600 hover:text-gray-800 py-2 px-3 rounded"
               activeClassName="bg-orange-500 text-white"
             >
               Login
-            </NavLink>
-            <NavLink 
+            </Link>
+            <Link 
               to="/register" 
               className="text-gray-600 hover:text-gray-800 py-2 px-3 rounded"
               activeClassName="bg-orange-500 text-white"
             >
               Registration
-            </NavLink>
-            <NavLink 
+            </Link>
+            <Link 
               to="/profile" 
               className="text-gray-600 hover:text-gray-800 py-2 px-3 rounded"
               activeClassName="bg-orange-500 text-white"
             >
               Profile
-            </NavLink>
+            </Link>
           </div>
           <div className="md:hidden flex items-center">
             <button onClick={toggleMenu} className="text-gray-600 hover:text-gray-800 focus:outline-none">
@@ -62,7 +62,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className={`${isOpen ? 'block' : 'hidden'} md:hidden`}>
-          <NavLink 
+          <Link 
             to="/" 
             exact
             className="block py-2 px-4 text-gray-600 hover:bg-gray-100"
@@ -70,39 +70,39 @@ const Navbar = () => {
             onClick={() => setIsOpen(false)}
           >
             Home
-          </NavLink>
-          <NavLink 
+          </Link>
+          <Link 
             to="/order" 
             className="block py-2 px-4 text-gray-600 hover:bg-gray-100"
             activeClassName="bg-orange-500 text-white"
             onClick={() => setIsOpen(false)}
           >
             Order
-          </NavLink>
-          <NavLink 
+          </Link>
+          <Link 
             to="/login" 
             className="block py-2 px-4 text-gray-600 hover:bg-gray-100"
             activeClassName="bg-orange-500 text-white"
             onClick={() => setIsOpen(false)}
           >
             Login
-          </NavLink>
-          <NavLink 
+          </Link>
+          <Link 
             to="/register" 
             className="block py-2 px-4 text-gray-600 hover:bg-gray-100"
             activeClassName="bg-orange-500 text-white"
             onClick={() => setIsOpen(false)}
           >
             Registration
-          </NavLink>
-          <NavLink 
+          </Link>
+          <Link 
             to="/profile" 
             className="block py-2 px-4 text-gray-600 hover:bg-gray-100"
             activeClassName="bg-orange-500 text-white"
             onClick={() => setIsOpen(false)}
           >
             Profile
-          </NavLink>
+          </Link>
         </div>
       </div>
     </nav>
